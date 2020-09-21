@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>3D Pancakes!</title>
+    <link rel="icon" href="stack.jpg" type="image/jpg" sizes="16x16">
+    <meta name="description" content="First Aframe Project">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="path/to/aframe.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="marble" src="marble.jpg">
+            <img id="topPancake" src="topPancake.jpg">
+            <img id="butter" src="butter.jpg">
+            <img id="syrup" src="syrup.jpg">
+            <img id="blueberry" src="blueberry.jpg">
+            <img id="environment" src="sky.jpg">
+
+        </a-assets>
+
+        <!-- Environment -->
+        <a-sky src="#environment"></a-sky>
+
+        <!-- Pancake based on the image-->
+        <a-sphere src="#blueberry" position=".03 1.2 -2.4" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position=".28 1.2 -2.2" radius=".079" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-.27 1.2 -2.6" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-.1 1.32 -2.65" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position=".01 1.32 -2.74" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-cylinder src="#syrup" position="0 0.05 -3" radius="1.5" height=".01" color="#bb9351" shadow></a-cylinder>
+        <a-cylinder src="#texture" position="0 .25 -3" radius="1.5" height=".15" color="#F5DEB3" shadow></a-cylinder>
+        <a-cylinder src="#topPancake" position="0 .32 -3" radius="1.49" height=".02" shadow></a-cylinder>
+        <a-cylinder src="#texture" position="0 .45 -3" radius="1.49" height=".2" color="#F5DEB3" shadow></a-cylinder>
+        <a-cylinder src="#topPancake" position="0 .545 -3" radius="1.48" height=".02" shadow></a-cylinder>
+        <a-cylinder src="#texture" position="0 .65 -3" radius="1.46" height=".22" color="#F5DEB3" shadow></a-cylinder>
+        <a-cylinder src="#topPancake" position="0 .751 -3" radius="1.44" height=".02" shadow></a-cylinder>
+        <a-cylinder src="#texture" position="0 .85 -3" radius="1.415" height=".22" color="#F5DEB3" shadow></a-cylinder>
+        <a-cylinder src="#topPancake" position="0 .955 -3" radius="1.4" height=".02" shadow></a-cylinder>
+        <a-cylinder src="#texture" position="0 .99 -3" radius="1.38" height=".28" color="#F5DEB3" shadow></a-cylinder>
+        <a-cylinder src="#topPancake" position="0 1.121 -3" radius="1.35" height=".02" shadow></a-cylinder>
+        <a-cylinder src="#syrup" position="0 1.13 -3" radius="1.25" height=".01" color="#bb9351" shadow></a-cylinder>
+        <a-box src="#butter" position="0 1.08 -2.7" scale="0.38 0.35 0.25" rotation="0 8 0" color="#FFFF66" shadow></a-box>
+        <a-sphere src="#blueberry" position="-1.28 .07 -2.112" radius=".079" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-1.19 .05 -1.99" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-1.09 .04 -1.88" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-.97 .03 -1.78" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="1.28 .07 -2.112" radius=".079" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="1.19 .05 -1.99" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="1.09 .04 -1.88" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position=".97 .03 -1.78" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-cylinder src="#blueberry" position="0.15 0.5 -1.89" radius=".39" height=".015" color="#0041C2"></a-cylinder>
+
+        <!-- <a-box position="-0.2 1.18 -2.7" scale="0.35 0.1 0.25" rotation="1 2 49" color="yellow" shadow></a-box>
+         <a-cylinder position="-0.41 0.9765 -2.04" radius="0.08" height=".31" color="#bb9351" shadow></a-cylinder>
+         <a-cylinder position="-0.21 1.55 -1.1" radius="0.08" height=".21" color="#bb9351" shadow></a-cylinder> -->
+
+        <!--The letter E-->
+        <a-sphere src="#blueberry" position="-1 .07 -1.2" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-1 .05 -1.1" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-1 .04 -1.0" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-1 .03 -.9" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-1 .02 -.8" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-.86 .05 -1.21" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-0.71 .05 -1.21" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-0.87 .01 -1.02" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-0.72 .01 -1.02" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-0.86 -0.01 -0.81" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-0.72 -.01 -0.81" radius=".085" color="#0041C2" shadow></a-sphere>
+
+        <!-- The letter N-->
+        <a-sphere src="#blueberry" position="-.45 .07 -1.2" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-.45 .05 -1.1" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-.45 .04 -1.0" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-.45 .03 -.9" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-.45 .02 -.8" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-.33 .04 -1.1" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-.26 .03 -0.98" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-.2 .03 -.87" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-.45 .03 -.9" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-0.08 .07 -1.2" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-.08 .05 -1.1" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-.08 .04 -1.0" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-.08 .03 -.9" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="-.08 .02 -.8" radius=".085" color="#0041C2" shadow></a-sphere>
+
+        <!--The letter J-->
+        <a-sphere src="#blueberry" position="0.18 .07 -1.2" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="0.32 .07 -1.2" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="0.45 .07 -1.2" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position=".32 .05 -1.1" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position=".32 .04 -1.0" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position=".32 .03 -.9" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position=".13 .03 -.9" radius=".08" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position=".16 .03 -.8" radius=".08" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position=".29 .03 -.8" radius=".08" color="#0041C2" shadow></a-sphere>
+
+        <!--The letter O-->
+        <a-sphere src="#blueberry" position="0.68 .07 -1.2" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="0.8 .07 -1.2" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="0.8 .01 -.8" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="0.92 .07 -1.2" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="0.68 .05 -1.1" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="0.68 .04 -1.0" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="0.68 .03 -.9" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="0.68 .02 -.8" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="0.92 .05 -1.1" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="0.92 .04 -1.0" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="0.92 .03 -.9" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="0.92 .02 -.8" radius=".085" color="#0041C2" shadow></a-sphere>
+
+        <!-- The letter Y-->
+        <a-sphere src="#blueberry" position="1.35 .04 -1.0" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="1.35 .03 -.9" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="1.35 .02 -.8" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="1.2 .05 -1.21" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="1.55 .05 -1.21" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="1.28 .05 -1.1" radius=".085" color="#0041C2" shadow></a-sphere>
+        <a-sphere src="#blueberry" position="1.45 .05 -1.1" radius=".085" color="#0041C2" shadow></a-sphere>
+
+
+        <a-cylinder src=cookie.jpg height=".15" radius="0.5" position="0 2 0" animation="property: position;
+                          from: -4 0.12 -6.7;
+                          to: -4 0.12 -1;
+                          loop: true;
+                          dir: alternate;
+                          dur: 10000;
+                          easing: easeInOutCubic">
+        </a-cylinder>
+
+        <a-cylinder src=cookie.jpg height=".15" radius="0.5" position="0 2 0" animation="property: position;
+                          from: 4 0.12 -1;
+                          to: 4 0.12 -6.7;
+                          loop: true;
+                          dir: alternate;
+                          dur: 10000;
+                          easing: easeInOutCubic">
+        </a-cylinder>
+
+        <a-plane src="#marble" position="0 0 -4" rotation="-90 0 0" width="4" height="7" shadow></a-plane>
+
+        <a-plane color=#BC8F8F position="0 0 -4" rotation="0 0 0" width="4" height="7" side="double" transparent="true" opacity="0.3" animation="property:                     position; 
+                        from:0 0 -4; 
+                        to 1 0 -6; 
+                        loop: true" animation__2="property: color; 
+                        to: #D2691E; 
+                        dur: 2000; 
+                        dir: alternate; 
+                        loop: true">
+        </a-plane>
+
+        <a-plane color=#D2691E position="-4.4 0 -8" rotation="0 0 0" width="4" height="7" side="double" transparent="true" opacity="0.3" animation="property:                   position; 
+                        from:-4.4 0 -8; 
+                        to 1 0 -6; 
+                        loop: true" animation__2="property: color; 
+                        to: #BC8F8F; 
+                        dur: 2000; 
+                        dir: alternate; 
+                        loop: true">
+        </a-plane>
+
+        <a-plane color=#D2691E position="4.4 0 -8" rotation="0 0 0" width="4" height="7" side="double" transparent="true" opacity="0.3" animation="property:                   position; 
+                        from:4.4 0 -8; 
+                        to 1 0 -6; 
+                        loop: true" animation__2="property: color;
+                        to: #BC8F8F; 
+                        dur: 2000; 
+                        dir: alternate; 
+                        loop: true">
+        </a-plane>
+
+        <a-plane src="#marble" position="-4 0 -4" rotation="-90 0 0" width="4" height="7" shadow></a-plane>
+        <a-plane src="#marble" position="4 0 -4" rotation="-90 0 0" width="4" height="7" shadow></a-plane>
+
+
+
+
+    </a-scene>
+</body></html>
+
